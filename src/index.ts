@@ -125,7 +125,7 @@ export function useReactMediaRecorder({
       setError(error.name);
       setStatus("idle");
     }
-  }, [audio, video, screen]);
+  }, [audio, video, screen, customMediaStream]);
 
   useEffect(() => {
     if (!window.MediaRecorder) {
